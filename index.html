@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Tic-Toc-Toe</title>
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="gameboard">
+            <div class="header">
+                <div class="winner"></div>
+                <span id="title">TIC TAC TOE</span>
+                <span id="reset"><input type="reset" onclick="resetGame()" value="New Game"></span>
+            </div>
+            <br>
+            <div class="body">
+                <div class="box bl bt" onclick="makeMove(this)"></div>
+                <div class="box bt" onclick="makeMove(this)"></div>
+                <div class="box br bt" onclick="makeMove(this)"></div>
+                <div class="box bl" onclick="makeMove(this)"></div>
+                <div class="box" onclick="makeMove(this)"></div>
+                <div class="box br" onclick="makeMove(this)"></div>
+                <div class="box bl bb" onclick="makeMove(this)"></div>
+                <div class="box bb" onclick="makeMove(this)"></div>
+                <div class="box br bb" onclick="makeMove(this)"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap');
+
+
+:root {
+    --main: #f8b51b;
+    --body: #136690;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--body);
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    min-width: 70%;
+    display: flex;
+    font-family: 'Skranji', cursive;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--main);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 45px;
+}
+
+#reset input[type="reset"]{
+    height: 40px;
+    width: fit-content;
+    text-align: center;
+    background-color: var(--main);
+    font-family:'Skranji', cursive;
+    border: none;
+    box-sizing: border-box;
+    padding: 9px;
+    border-radius: 10px;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+}
+
+.body{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3,95px);
+    column-gap: 0px;
+    justify-content: center;
+}
+
+.box{
+    height:90px;
+    font-size: 60px;
+    text-align: center;
+    background-color: var(--body);
+    border: 1.5px solid var(--main);
+}
+
+.box:hover{
+    background-color: #0271a8;
+}
+
+.br{
+    border-right: 0;
+}
+
+.bl{
+    border-left: 0;
+}
+
+.bb{
+    border-bottom: 0;
+}
+
+.bt{
+    border-top: 0;
+}
+
+.winner{
+    color: rgb(252, 62, 62);
+}
